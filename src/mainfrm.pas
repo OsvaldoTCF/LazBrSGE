@@ -45,8 +45,8 @@ implementation
 
 {$R *.lfm}
 uses
-   cadastro,pag_rec,produtos, recibo{, orcamentos, defeitos, boleto,consultas_ol,
-  , es_nf, sendmail, loja, outros,nfe};
+   cadastro,pag_rec,produtos, recibo, es_nf{, orcamentos, defeitos
+  , boleto,consultas_ol, , sendmail, loja, outros,nfe};
 
 { TMainForm }
 
@@ -94,7 +94,7 @@ begin
   CreatePageForm(Tfrm_cadastro, MainPagecontrol,'',0);
   CreatePageForm(TContasPagRecForm, MainPagecontrol,'',8);
  // CreatePageForm(TConsultasOlFrm, MainPagecontrol,'',9);
- // CreatePageForm(TTF_ES_NF, MainPagecontrol,'',5);
+  CreatePageForm(TTF_ES_NF, MainPagecontrol,'',5);
   CreatePageForm(Tcad_prod, MainPagecontrol,'',4);
 //  CreatePageForm(TFrmdefeitos, MainPagecontrol,'',3);
  // CreatePageForm(TOrcamentosForm, MainPagecontrol,'',6);
