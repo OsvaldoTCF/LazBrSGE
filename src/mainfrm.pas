@@ -22,15 +22,6 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure MainPagecontrolCloseTabClicked(Sender: TObject);
-    procedure ToolButton13Click(Sender: TObject);
-    procedure ToolButton1Click(Sender: TObject);
-    procedure ToolButton2Click(Sender: TObject);
-    procedure ToolButton3Click(Sender: TObject);
-    procedure ToolButton4Click(Sender: TObject);
-    procedure ToolButton5Click(Sender: TObject);
-    procedure ToolButton6Click(Sender: TObject);
-    procedure ToolButton8Click(Sender: TObject);
-    procedure ToolButton9Click(Sender: TObject);
   public
     procedure CreatePageForm(const AFormClass: TFormClass;
       var APageControl: TPageControl; const ACaption: TCaption = '';
@@ -54,7 +45,7 @@ implementation
 
 {$R *.lfm}
 uses
-   cadastro{, orcamentos, defeitos, boleto, recibo,consultas_ol, pag_rec,
+   cadastro,pag_rec{, orcamentos, defeitos, boleto, recibo,consultas_ol,
   produtos, es_nf, sendmail, loja, outros,nfe};
 
 { TMainForm }
@@ -101,7 +92,7 @@ procedure TMainForm.FormShow(Sender: TObject);
 begin
   // CreatePageForm(TForm_boletos, MainPagecontrol,'',1);
   CreatePageForm(Tfrm_cadastro, MainPagecontrol,'',0);
- // CreatePageForm(TContasPagRecForm, MainPagecontrol,'',8);
+  CreatePageForm(TContasPagRecForm, MainPagecontrol,'',8);
  // CreatePageForm(TConsultasOlFrm, MainPagecontrol,'',9);
  // CreatePageForm(TTF_ES_NF, MainPagecontrol,'',5);
  // CreatePageForm(Tcad_prod, MainPagecontrol,'',4);
@@ -115,50 +106,6 @@ begin
   ClosePageForm(TPage(Sender).Caption, MainPagecontrol);
 end;
 
-procedure TMainForm.ToolButton13Click(Sender: TObject);
-begin
- //  CreatePageForm(TNFE_frm, MainPagecontrol,'',13);
-end;
-
-procedure TMainForm.ToolButton1Click(Sender: TObject);
-begin
-  //CreatePageForm(TForm_boletos, MainPagecontrol,'',1);
-end;
-
-procedure TMainForm.ToolButton2Click(Sender: TObject);
-begin
-  CreatePageForm(Tfrm_cadastro, MainPagecontrol,'',0);
-end;
-
-procedure TMainForm.ToolButton3Click(Sender: TObject);
-begin
- // CreatePageForm(TContasPagRecForm, MainPagecontrol,'',8);
-end;
-
-procedure TMainForm.ToolButton4Click(Sender: TObject);
-begin
-//  CreatePageForm(TConsultasOlFrm, MainPagecontrol,'',9);
-end;
-
-procedure TMainForm.ToolButton5Click(Sender: TObject);
-begin
- // CreatePageForm(TTF_ES_NF, MainPagecontrol,'',5);
-end;
-
-procedure TMainForm.ToolButton6Click(Sender: TObject);
-begin
- // CreatePageForm(Tcad_prod, MainPagecontrol,'',4);
-end;
-
-procedure TMainForm.ToolButton8Click(Sender: TObject);
-begin
- // CreatePageForm(TOrcamentosForm, MainPagecontrol,'',6);
-end;
-
-procedure TMainForm.ToolButton9Click(Sender: TObject);
-begin
-//  CreatePageForm(TFrm_recibo, MainPagecontrol,'',7);
-end;
 
 procedure TMainForm.CreatePageForm(const AFormClass: TFormClass;
   var APageControl: TPageControl; const ACaption: TCaption = '';
