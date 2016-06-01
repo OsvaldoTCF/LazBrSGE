@@ -38,3 +38,9 @@ Por favor use [issues page](https://github.com/alexpseletr/LazBrSGE/issues) ou s
 * Orçamentos (funcional, mas pendente relatorio em pdf direto pelo sistema sem uso de app externo)
 * Recibo  (funcional, mas pendente relatorio em pdf direto pelo sistema sem uso de app externo)
 * NFe  (funcional, mas pendente melhoria danfe pdf e assinatura direto pelo sistema sem uso de app externo) hoje otimizado para simples.
+
+##Instalação Binario
+* Instalar Postgresql
+* Copiar o Executavel,para qualquer pasta(se linux dar permissao de execução).
+* Copiar o config.ini para a mesma pasta do executavel
+* Criar uma subasta com nome temp e outra com nome de remessa.
