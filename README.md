@@ -44,3 +44,4 @@ Por favor use [issues page](https://github.com/alexpseletr/LazBrSGE/issues) ou s
 * Copiar o Executavel,para qualquer pasta(se linux dar permissao de execução).
 * Copiar o config.ini para a mesma pasta do executavel
 * Criar uma subasta com nome temp e outra com nome de remessa.
+* Rodar o executavel
