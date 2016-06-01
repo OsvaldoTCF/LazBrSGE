@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="LazBrSGE"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <Language Value="0416"/>
+      <StringTable ProductName="LazBrSGE" ProductVersion="1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="LazBrSGE.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainfrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="LazBrSGE"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);../componentes/acbr/trunk2/trunk2/Fontes/ACBrComum;../componentes/acbr/trunk2/trunk2/Fontes/ACBrTCP"/>
+      <OtherUnitFiles Value="src;src/consultas_online;src/contas;src/cadastro;src/orcamentos;src/defeitos;src/boleto;src/recibo;src/produtos;src/entr_nF;src/sendmail;src/loja_virtual;src/alex;src/nfe;src/jpdf;src/alex/cores_resistor;src/synapse/source/lib;../componentes/acbr/trunk2/trunk2/Fontes/PCNComum;../componentes/acbr/trunk2/trunk2/Fontes/ACBrDFe/ACBrNFe/PCNNFe;../componentes/acbr/trunk2/trunk2/Fontes/ACBrComum;../componentes/acbr/trunk2/trunk2/Fontes/ACBrDiversos;../componentes/acbr/trunk2/trunk2/Fontes/ACBrDFe;../componentes/acbr/trunk2/trunk2/Fontes/ACBrTXT;../componentes/acbr/trunk2/trunk2/Fontes/ACBrTXT/ACBrSPED;../componentes/acbr/trunk2/trunk2/Fontes/ACBrTXT/ACBrSPED/ACBrSPEDFiscal;../../../../Backup/documentos/BKP/Codigo_fonte_aplicativos/LazBrSGE_teste"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="2"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
