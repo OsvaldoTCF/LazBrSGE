@@ -1,0 +1,968 @@
+object cad_prod: Tcad_prod
+  Left = 43
+  Height = 634
+  Top = 57
+  Width = 1108
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 634
+  ClientWidth = 1108
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.7'
+  WindowState = wsMaximized
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 634
+    Top = 0
+    Width = 1108
+    HorzScrollBar.Page = 1039
+    VertScrollBar.Page = 574
+    Align = alClient
+    ClientHeight = 632
+    ClientWidth = 1106
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Height = 632
+      Top = 0
+      Width = 757
+      Align = alClient
+      ClientHeight = 632
+      ClientWidth = 757
+      TabOrder = 0
+      object Panel3: TPanel
+        Left = 1
+        Height = 350
+        Top = 281
+        Width = 755
+        Align = alClient
+        ClientHeight = 350
+        ClientWidth = 755
+        TabOrder = 0
+        object Panel4: TPanel
+          AnchorSideLeft.Side = asrBottom
+          Left = 351
+          Height = 348
+          Top = 1
+          Width = 403
+          Align = alRight
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          ClientHeight = 348
+          ClientWidth = 403
+          TabOrder = 0
+          object GroupBox1: TGroupBox
+            Left = 1
+            Height = 172
+            Top = 1
+            Width = 401
+            Align = alTop
+            Caption = 'Fornecedor'
+            ClientHeight = 158
+            ClientWidth = 397
+            TabOrder = 0
+            object NFantasiaEdit: TEdit
+              Left = 2
+              Height = 22
+              Top = 3
+              Width = 208
+              CharCase = ecUppercase
+              OnClick = NFantasiaEditClick
+              OnKeyUp = NFantasiaEditKeyUp
+              TabOrder = 0
+            end
+            object StringGrid1: TStringGrid
+              AnchorSideTop.Control = NFantasiaEdit
+              AnchorSideTop.Side = asrBottom
+              Left = 0
+              Height = 118
+              Top = 40
+              Width = 397
+              Align = alBottom
+              Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Top = 15
+              FixedCols = 0
+              TabOrder = 1
+              TitleFont.Height = -11
+              TitleFont.Name = 'MS Sans Serif'
+              OnDblClick = StringGrid1DblClick
+              OnSelection = StringGrid1Selection
+            end
+            object SpeedButton4: TSpeedButton
+              Left = 229
+              Height = 22
+              Hint = 'Adicionar'
+              Top = 3
+              Width = 23
+              Caption = '+'
+              OnClick = SpeedButton4Click
+              ShowHint = True
+              ParentShowHint = False
+            end
+            object SpeedButton5: TSpeedButton
+              Left = 269
+              Height = 22
+              Hint = 'Apagar'
+              Top = 3
+              Width = 23
+              Caption = '-'
+              OnClick = SpeedButton5Click
+              ShowHint = True
+              ParentShowHint = False
+            end
+            object SpeedButton2: TSpeedButton
+              Left = 309
+              Height = 22
+              Hint = 'Limpar'
+              Top = 5
+              Width = 23
+              Caption = 'L'
+              OnClick = SpeedButton2Click
+              ShowHint = True
+              ParentShowHint = False
+            end
+            object NFantasiaIDEdit: TEdit
+              Left = 213
+              Height = 22
+              Top = -4
+              Width = 25
+              Anchors = []
+              TabOrder = 2
+              Visible = False
+            end
+            object idprodfornEdit: TEdit
+              Left = 125
+              Height = 22
+              Top = 19
+              Width = 24
+              TabOrder = 3
+              Visible = False
+            end
+            object idfornEdit: TEdit
+              Left = 173
+              Height = 22
+              Top = 27
+              Width = 24
+              TabOrder = 4
+              Visible = False
+            end
+          end
+          object GroupBox2: TGroupBox
+            Left = 1
+            Height = 169
+            Top = 178
+            Width = 401
+            Align = alClient
+            Caption = 'Procurar itens'
+            ClientHeight = 155
+            ClientWidth = 397
+            TabOrder = 1
+            object BuscaItemEdit: TEdit
+              Left = 13
+              Height = 22
+              Top = 10
+              Width = 176
+              CharCase = ecUppercase
+              OnChange = BuscaItemEditChange
+              TabOrder = 0
+            end
+            object StringGrid4: TStringGrid
+              AnchorSideTop.Control = BuscaItemEdit
+              AnchorSideTop.Side = asrBottom
+              Left = 0
+              Height = 108
+              Top = 47
+              Width = 397
+              Align = alBottom
+              Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Top = 15
+              ColCount = 2
+              FixedCols = 0
+              TabOrder = 1
+              TitleFont.Height = -11
+              TitleFont.Name = 'MS Sans Serif'
+              OnDblClick = StringGrid4DblClick
+              OnSelection = StringGrid4Selection
+            end
+          end
+          object Splitter2: TSplitter
+            Cursor = crVSplit
+            Left = 1
+            Height = 5
+            Top = 173
+            Width = 401
+            Align = alTop
+            ResizeAnchor = akTop
+          end
+        end
+        object Splitter3: TSplitter
+          Left = 346
+          Height = 348
+          Top = 1
+          Width = 5
+          Align = alRight
+          ResizeAnchor = akRight
+        end
+        object GroupBox3: TGroupBox
+          Left = 1
+          Height = 348
+          Top = 1
+          Width = 345
+          Align = alClient
+          Caption = 'Itens Composição'
+          ClientHeight = 334
+          ClientWidth = 341
+          TabOrder = 2
+          object StringGrid2: TStringGrid
+            AnchorSideTop.Control = QuantItemEdit
+            AnchorSideTop.Side = asrBottom
+            Left = 7
+            Height = 285
+            Top = 54
+            Width = 328
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Top = 15
+            FixedCols = 0
+            TabOrder = 0
+            TitleFont.Height = -11
+            TitleFont.Name = 'MS Sans Serif'
+            OnDblClick = StringGrid2DblClick
+            OnSelection = StringGrid2Selection
+          end
+          object QuantItemEdit: TEdit
+            Left = 7
+            Height = 22
+            Top = 17
+            Width = 48
+            TabOrder = 1
+            Text = '0'
+          end
+          object Label11: TLabel
+            AnchorSideLeft.Control = QuantItemEdit
+            AnchorSideBottom.Control = QuantItemEdit
+            Left = 7
+            Height = 12
+            Top = 5
+            Width = 32
+            Anchors = [akLeft, akBottom]
+            Caption = 'Quant.'
+            ParentColor = False
+          end
+          object ItemEdit: TEdit
+            AnchorSideLeft.Control = QuantItemEdit
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = QuantItemEdit
+            Left = 65
+            Height = 22
+            Top = 17
+            Width = 203
+            BorderSpacing.Left = 10
+            CharCase = ecUppercase
+            Enabled = False
+            TabOrder = 2
+          end
+          object Label15: TLabel
+            AnchorSideLeft.Control = ItemEdit
+            AnchorSideBottom.Control = ItemEdit
+            Left = 65
+            Height = 12
+            Top = 5
+            Width = 20
+            Anchors = [akLeft, akBottom]
+            Caption = 'Item'
+            ParentColor = False
+          end
+          object ItemIdEdit: TEdit
+            Left = 172
+            Height = 22
+            Top = 33
+            Width = 24
+            TabOrder = 3
+            Visible = False
+          end
+          object SpeedButton6: TSpeedButton
+            Left = 268
+            Height = 22
+            Hint = 'Adicionar'
+            Top = 17
+            Width = 23
+            Caption = '+'
+            OnClick = SpeedButton6Click
+            ShowHint = True
+            ParentShowHint = False
+          end
+          object SpeedButton7: TSpeedButton
+            Left = 292
+            Height = 22
+            Hint = 'Apagar'
+            Top = 17
+            Width = 23
+            Caption = '-'
+            OnClick = SpeedButton7Click
+            ShowHint = True
+            ParentShowHint = False
+          end
+          object SpeedButton1: TSpeedButton
+            Left = 316
+            Height = 22
+            Hint = 'Limpar'
+            Top = 17
+            Width = 23
+            Caption = 'L'
+            OnClick = SpeedButton1Click
+            ShowHint = True
+            ParentShowHint = False
+          end
+          object idcompoEdit: TEdit
+            Left = 204
+            Height = 22
+            Top = -4
+            Width = 16
+            TabOrder = 4
+            Visible = False
+          end
+          object idcompEdit: TEdit
+            Left = 204
+            Height = 22
+            Top = 40
+            Width = 24
+            TabOrder = 5
+            Visible = False
+          end
+        end
+      end
+      object Panel5: TPanel
+        Left = 1
+        Height = 275
+        Top = 1
+        Width = 755
+        Align = alTop
+        ClientHeight = 275
+        ClientWidth = 755
+        TabOrder = 1
+        object IdEdit: TEdit
+          Left = 0
+          Height = 22
+          Top = 0
+          Width = 16
+          Color = clMoneyGreen
+          OnChange = IdEditChange
+          TabOrder = 0
+          Visible = False
+        end
+        object InserirSpeedButton: TSpeedButton
+          Left = 50
+          Height = 22
+          Top = 20
+          Width = 55
+          Caption = 'Inserir'
+          Enabled = False
+          OnClick = InserirSpeedButtonClick
+        end
+        object ExcluirSpeedButton: TSpeedButton
+          AnchorSideLeft.Control = InserirSpeedButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = InserirSpeedButton
+          Left = 241
+          Height = 22
+          Top = 20
+          Width = 56
+          BorderSpacing.Left = 136
+          Caption = 'Excluir'
+          Enabled = False
+          OnClick = ExcluirSpeedButtonClick
+        end
+        object LimparSpeedButton: TSpeedButton
+          Left = 426
+          Height = 22
+          Top = 20
+          Width = 51
+          BorderSpacing.Left = 145
+          Caption = 'Limpar'
+          OnClick = LimparSpeedButtonClick
+        end
+        object Label14: TLabel
+          Left = 602
+          Height = 12
+          Top = 145
+          Width = 61
+          Anchors = [akLeft, akBottom]
+          Caption = 'Foto Produto'
+          ParentColor = False
+        end
+        object CodigoProdutoEdit: TEdit
+          Left = 12
+          Height = 22
+          Top = 80
+          Width = 103
+          CharCase = ecUppercase
+          OnEditingDone = CodigoProdutoEditEditingDone
+          TabOrder = 1
+        end
+        object Label2: TLabel
+          AnchorSideLeft.Control = CodigoProdutoEdit
+          AnchorSideBottom.Control = CodigoProdutoEdit
+          Left = 12
+          Height = 12
+          Top = 68
+          Width = 73
+          Anchors = [akLeft, akBottom]
+          Caption = 'Codigo Produto'
+          ParentColor = False
+        end
+        object VlCustoEdit: TEdit
+          AnchorSideLeft.Control = CodigoProdutoEdit
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = CodigoProdutoEdit
+          Left = 130
+          Height = 22
+          Top = 80
+          Width = 90
+          BorderSpacing.Left = 15
+          OnEditingDone = VlCustoEditEditingDone
+          TabOrder = 2
+          Text = '0,00'
+        end
+        object Label10: TLabel
+          AnchorSideLeft.Control = VlCustoEdit
+          AnchorSideBottom.Control = VlCustoEdit
+          Left = 130
+          Height = 12
+          Top = 68
+          Width = 68
+          Anchors = [akLeft, akBottom]
+          Caption = 'Valor de custo'
+          ParentColor = False
+        end
+        object Edit6: TEdit
+          AnchorSideLeft.Control = VlCustoEdit
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = CodigoProdutoEdit
+          Left = 235
+          Height = 22
+          Top = 80
+          Width = 104
+          BorderSpacing.Left = 15
+          OnEditingDone = VlCustoEditEditingDone
+          TabOrder = 3
+          Text = '0,00'
+        end
+        object Label13: TLabel
+          AnchorSideLeft.Control = Edit6
+          AnchorSideBottom.Control = Edit6
+          Left = 235
+          Height = 12
+          Top = 68
+          Width = 83
+          Anchors = [akLeft, akBottom]
+          Caption = 'Valor base venda'
+          ParentColor = False
+        end
+        object EstoqueAtualEdit: TEdit
+          AnchorSideLeft.Control = Edit6
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Edit6
+          Left = 354
+          Height = 22
+          Top = 80
+          Width = 88
+          BorderSpacing.Left = 15
+          OnEditingDone = VlCustoEditEditingDone
+          TabOrder = 4
+        end
+        object Label1: TLabel
+          AnchorSideLeft.Control = EstoqueAtualEdit
+          AnchorSideBottom.Control = EstoqueAtualEdit
+          Left = 354
+          Height = 12
+          Top = 68
+          Width = 65
+          Anchors = [akLeft, akBottom]
+          Caption = 'Estoque atual'
+          ParentColor = False
+        end
+        object DescricaoEdit: TEdit
+          AnchorSideLeft.Control = CodigoProdutoEdit
+          Left = 12
+          Height = 22
+          Top = 120
+          Width = 512
+          CharCase = ecUppercase
+          OnEditingDone = DescricaoEditEditingDone
+          TabOrder = 5
+        end
+        object Label3: TLabel
+          AnchorSideLeft.Control = DescricaoEdit
+          AnchorSideBottom.Control = DescricaoEdit
+          Left = 12
+          Height = 12
+          Top = 108
+          Width = 48
+          Anchors = [akLeft, akBottom]
+          Caption = 'Descrição'
+          ParentColor = False
+        end
+        object Label16: TLabel
+          AnchorSideLeft.Control = PesoEdit
+          AnchorSideBottom.Control = PesoEdit
+          Left = 457
+          Height = 12
+          Top = 68
+          Width = 43
+          Anchors = [akLeft, akBottom]
+          Caption = 'Peso(Kg)'
+          ParentColor = False
+        end
+        object PesoEdit: TEdit
+          AnchorSideLeft.Control = EstoqueAtualEdit
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = EstoqueAtualEdit
+          Left = 457
+          Height = 22
+          Top = 80
+          Width = 63
+          BorderSpacing.Left = 15
+          OnEditingDone = VlCustoEditEditingDone
+          TabOrder = 6
+        end
+        object NcmEdit: TEdit
+          AnchorSideLeft.Control = PesoEdit
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = PesoEdit
+          Left = 534
+          Height = 22
+          Top = 80
+          Width = 80
+          BorderSpacing.Left = 14
+          OnEditingDone = NcmEditEditingDone
+          TabOrder = 7
+        end
+        object Label17: TLabel
+          AnchorSideLeft.Control = NcmEdit
+          AnchorSideTop.Control = NcmEdit
+          AnchorSideBottom.Control = NcmEdit
+          Left = 534
+          Height = 12
+          Top = 68
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          Caption = 'Ncm'
+          ParentColor = False
+        end
+        object Button1: TButton
+          Left = 602
+          Height = 25
+          Top = 214
+          Width = 25
+          Caption = '+'
+          TabOrder = 8
+        end
+        object Button2: TButton
+          Left = 661
+          Height = 25
+          Top = 214
+          Width = 25
+          Caption = '-'
+          TabOrder = 9
+        end
+        object Panel6: TPanel
+          AnchorSideLeft.Control = DescricaoEdit
+          AnchorSideTop.Control = DescricaoEdit
+          AnchorSideTop.Side = asrBottom
+          Left = 12
+          Height = 114
+          Top = 151
+          Width = 93
+          BorderSpacing.Top = 9
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clSilver
+          ParentColor = False
+          TabOrder = 10
+          object Label4: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 1(%)'
+            ParentColor = False
+          end
+          object Tabela1Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label18: TLabel
+            Left = 18
+            Height = 24
+            Top = 48
+            Width = 38
+            Caption = 'Cliente '#10'Fin. fora'
+            ParentColor = False
+          end
+          object LabelT1: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object Panel7: TPanel
+          AnchorSideLeft.Control = Panel6
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Panel6
+          Left = 105
+          Height = 114
+          Top = 151
+          Width = 93
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clMoneyGreen
+          ParentColor = False
+          TabOrder = 11
+          object Label5: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 2(%)'
+            ParentColor = False
+          end
+          object Tabela2Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label20: TLabel
+            Left = 16
+            Height = 24
+            Top = 48
+            Width = 56
+            Caption = 'Revenda'#10'+ de 10 pçs'
+            ParentColor = False
+          end
+          object LabelT2: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object Panel8: TPanel
+          AnchorSideLeft.Control = Panel9
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Panel9
+          Left = 291
+          Height = 114
+          Top = 151
+          Width = 93
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clMoneyGreen
+          ParentColor = False
+          TabOrder = 12
+          object Label6: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 4(%)'
+            ParentColor = False
+          end
+          object Tabela4Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label22: TLabel
+            Left = 16
+            Height = 24
+            Top = 48
+            Width = 40
+            Caption = 'Mais de '#10'100 pçs'
+            ParentColor = False
+          end
+          object LabelT4: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object Panel9: TPanel
+          AnchorSideLeft.Control = Panel7
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Panel7
+          Left = 198
+          Height = 114
+          Top = 151
+          Width = 93
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clSilver
+          ParentColor = False
+          TabOrder = 13
+          object Label7: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 3(%)'
+            ParentColor = False
+          end
+          object Tabela3Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label24: TLabel
+            Left = 16
+            Height = 24
+            Top = 48
+            Width = 40
+            Caption = 'Mais de '#10'50 pçs'
+            ParentColor = False
+          end
+          object LabelT3: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object Panel10: TPanel
+          AnchorSideLeft.Control = Panel11
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Panel11
+          Left = 477
+          Height = 114
+          Top = 151
+          Width = 93
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clMoneyGreen
+          ParentColor = False
+          TabOrder = 14
+          object Label8: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 6(%)'
+            ParentColor = False
+          end
+          object Tabela6Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label26: TLabel
+            Left = 8
+            Height = 24
+            Top = 48
+            Width = 55
+            Caption = 'Consumidor'#10'Final'
+            ParentColor = False
+          end
+          object LabelT6: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object Panel11: TPanel
+          AnchorSideLeft.Control = Panel8
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Panel8
+          Left = 384
+          Height = 114
+          Top = 151
+          Width = 93
+          ClientHeight = 114
+          ClientWidth = 93
+          Color = clSilver
+          ParentColor = False
+          TabOrder = 15
+          object Label9: TLabel
+            AnchorSideLeft.Control = Tabela1Edit
+            AnchorSideBottom.Control = Tabela1Edit
+            Left = 8
+            Height = 19
+            Top = 5
+            Width = 56
+            Anchors = [akTop, akLeft, akBottom]
+            Caption = 'Tabela 5(%)'
+            ParentColor = False
+          end
+          object Tabela5Edit: TEdit
+            AnchorSideLeft.Control = CodigoProdutoEdit
+            Left = 8
+            Height = 22
+            Top = 24
+            Width = 80
+            OnEditingDone = VlCustoEditEditingDone
+            TabOrder = 0
+          end
+          object Label28: TLabel
+            Left = 16
+            Height = 24
+            Top = 48
+            Width = 54
+            Caption = 'Venda com'#10'comissao'
+            ParentColor = False
+          end
+          object LabelT5: TLabel
+            Left = 16
+            Height = 12
+            Top = 88
+            Width = 12
+            Caption = '....'
+            ParentColor = False
+          end
+        end
+        object BtnDuplicar: TSpeedButton
+          AnchorSideLeft.Control = InserirSpeedButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = InserirSpeedButton
+          Left = 127
+          Height = 22
+          Hint = 'Gravar alteraçõs como outro item'
+          Top = 20
+          Width = 60
+          BorderSpacing.Left = 22
+          Caption = 'Duplicar'
+          Visible = False
+          OnClick = BtnDuplicarClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+      object Splitter4: TSplitter
+        Cursor = crVSplit
+        Left = 1
+        Height = 5
+        Top = 276
+        Width = 755
+        Align = alTop
+        ResizeAnchor = akTop
+      end
+    end
+    object Panel2: TPanel
+      Left = 762
+      Height = 632
+      Top = 0
+      Width = 344
+      Align = alRight
+      ClientHeight = 632
+      ClientWidth = 344
+      TabOrder = 1
+      object StringGrid3: TStringGrid
+        AnchorSideTop.Control = BuscaEdit
+        Left = 1
+        Height = 549
+        Top = 82
+        Width = 342
+        Align = alBottom
+        AlternateColor = 13298678
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 35
+        FixedCols = 0
+        TabOrder = 0
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        OnDblClick = StringGrid3DblClick
+        OnSelection = StringGrid3Selection
+      end
+      object BuscaEdit: TEdit
+        Left = 14
+        Height = 22
+        Top = 47
+        Width = 160
+        CharCase = ecUppercase
+        OnEditingDone = BuscaEditChange
+        TabOrder = 1
+      end
+      object Label12: TLabel
+        Left = 13
+        Height = 12
+        Top = 27
+        Width = 40
+        Caption = 'Procurar'
+        ParentColor = False
+      end
+    end
+    object Splitter1: TSplitter
+      Left = 757
+      Height = 632
+      Top = 0
+      Width = 5
+      Align = alRight
+      ResizeAnchor = akRight
+    end
+  end
+  object ProdutosSQLQuery: TSQLQuery
+    FieldDefs = <>
+    Options = []
+    Params = <>
+    left = 48
+    top = 536
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 14
+    top = 16
+  end
+  object SQLQuery: TSQLQuery
+    FieldDefs = <>
+    Options = []
+    Params = <>
+    left = 160
+    top = 536
+  end
+end

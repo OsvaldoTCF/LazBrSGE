@@ -64,7 +64,6 @@ object MainForm: TMainForm
     TabOrder = 0
     TabPosition = tpLeft
     OnCloseTabClicked = MainPagecontrolCloseTabClicked
-    Options = [nboShowCloseButtons]
   end
   object MainSQLTransaction: TSQLTransaction
     Active = False
