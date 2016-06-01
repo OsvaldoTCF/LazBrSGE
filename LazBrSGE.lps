@@ -25,7 +25,7 @@
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="../../../../Codigo_fonte_aplicativos/LazBrSGE_teste/mainfrm.pas"/>
+        <Filename Value="../../../../Codigo_fonte_aplicativos/LazBrSGE_teste/src/mainfrm.pas"/>
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
