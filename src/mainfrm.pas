@@ -31,7 +31,7 @@ type
     procedure ClosePageForm(const APageName: TComponentName;
       var APageControl: TPageControl);
     const   Usuario:string = 'postgres';
-    const   Senha:string = 'senha';
+    const   Senha:string = 'postgres';
   end;
 
 var
@@ -45,7 +45,7 @@ implementation
 
 {$R *.lfm}
 uses
-   cadastro,pag_rec,produtos{, orcamentos, defeitos, boleto, recibo,consultas_ol,
+   cadastro,pag_rec,produtos, recibo{, orcamentos, defeitos, boleto,consultas_ol,
   , es_nf, sendmail, loja, outros,nfe};
 
 { TMainForm }
@@ -98,7 +98,7 @@ begin
   CreatePageForm(Tcad_prod, MainPagecontrol,'',4);
 //  CreatePageForm(TFrmdefeitos, MainPagecontrol,'',3);
  // CreatePageForm(TOrcamentosForm, MainPagecontrol,'',6);
-
+ CreatePageForm(TFrm_recibo, MainPagecontrol,'',7);
 end;
 
 procedure TMainForm.MainPagecontrolCloseTabClicked(Sender: TObject);
