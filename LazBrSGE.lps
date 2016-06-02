@@ -3,12 +3,12 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="13">
+    <Units Count="14">
       <Unit0>
         <Filename Value="LazBrSGE.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="43" Y="15"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -18,9 +18,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="37"/>
+        <TopLine Value="31"/>
         <CursorPos X="26" Y="49"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -33,7 +33,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="59" Y="4"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
       </Unit2>
       <Unit3>
         <Filename Value="src/contas/pag_rec.pas"/>
@@ -43,7 +43,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="85" Y="630"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
       </Unit3>
       <Unit4>
         <Filename Value="src/produtos/produtos.pas"/>
@@ -54,31 +54,9 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="401"/>
         <CursorPos X="64" Y="401"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit4>
       <Unit5>
-        <Filename Value="mainfrm.pas"/>
-        <ComponentName Value="MainForm"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="65" Y="2"/>
-        <UsageCount Value="27"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="../../../../Backup/documentos/BKP/Codigo_fonte_aplicativos/LazBrSGE_teste/src/mainfrm.pas"/>
-        <ComponentName Value="MainForm"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="19"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="src/LazBrSGE.lpr"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="8" Y="10"/>
-        <UsageCount Value="9"/>
-      </Unit7>
-      <Unit8>
         <Filename Value="src/recibo/recibo.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Frm_recibo"/>
@@ -88,11 +66,11 @@
         <EditorIndex Value="2"/>
         <TopLine Value="343"/>
         <CursorPos X="43" Y="357"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit8>
-      <Unit9>
+      </Unit5>
+      <Unit6>
         <Filename Value="src/entr_nF/es_nf.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TF_ES_NF"/>
@@ -100,9 +78,9 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="59" Y="4"/>
-        <UsageCount Value="21"/>
-      </Unit9>
-      <Unit10>
+        <UsageCount Value="22"/>
+      </Unit6>
+      <Unit7>
         <Filename Value="src/entr_nF/Frm_SPEDFiscal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmSPEDFiscal"/>
@@ -111,9 +89,9 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="119"/>
         <CursorPos X="76" Y="134"/>
-        <UsageCount Value="21"/>
-      </Unit10>
-      <Unit11>
+        <UsageCount Value="22"/>
+      </Unit7>
+      <Unit8>
         <Filename Value="src/entr_nF/xml_ent_import.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="xml_ent_imp"/>
@@ -121,7 +99,29 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="57" Y="4"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="mainfrm.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="65" Y="2"/>
+        <UsageCount Value="27"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../Backup/documentos/BKP/Codigo_fonte_aplicativos/LazBrSGE_teste/src/mainfrm.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="19"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="src/LazBrSGE.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="10"/>
+        <UsageCount Value="9"/>
       </Unit11>
       <Unit12>
         <Filename Value="../../../../../Documentos/BKP/Codigo_fonte_aplicativos/LazBrSGE_teste/src/entr_nF/uGeraArquivo.pas"/>
@@ -131,6 +131,12 @@
         <CursorPos X="81" Y="9"/>
         <UsageCount Value="10"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="src/jpdf/libjpfpdf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+      </Unit13>
     </Units>
     <JumpHistory Count="1">
       <Position1>

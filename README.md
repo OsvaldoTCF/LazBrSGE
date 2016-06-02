@@ -21,8 +21,9 @@ Agencia 0478-2
 Conta :7.079-3
 
 ##Pacotes de terceiros
-* ACBR PCN
+* ACBR PCN , NFE e outros
 * Pack_powerpdf
+* synapse
 * Postgresql (banco de dados) , ou outro compativel com sqldb (mysql,firebird,oracle,sqlite) porem alterando o codigo
 * demais fornecidos junto com projeto
 
@@ -45,3 +46,4 @@ Por favor use [issues page](https://github.com/alexpseletr/LazBrSGE/issues) ou s
 * Copiar o config.ini para a mesma pasta do executavel
 * Criar uma subasta com nome temp e outra com nome de remessa.
 * Rodar o executavel
+* No caso do binario compilado pode haver alguns recursos ainda nao concluidos que podem não funcionar corretamente (exemplo : a senha do email para envio de orçamento que esta momentaneamente direto no codigo)

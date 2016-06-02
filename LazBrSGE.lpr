@@ -6,8 +6,8 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Interfaces, SysUtils, mainfrm, es_nf, Frm_SPEDFiscal, xml_ent_import, recibo,
-  produtos, cadastro, // this includes the LCL widgetset
+  Interfaces, SysUtils, mainfrm, libjpfpdf, es_nf, Frm_SPEDFiscal,
+  xml_ent_import, recibo, produtos, cadastro, // this includes the LCL widgetset
   Forms;
 
 {$R *.res}
