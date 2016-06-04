@@ -5,7 +5,7 @@ Sistema de gestao empresarial (ERP) escrito em lazarus
 Elaborar um aplicativo funcional para maioria das empresas utilizando o minimo de componentes de terceiro possiveis.
 
 ##Licença
-Este aplicativo é gratuito e codigo aberto ,caso for utilizar para sua empresa use por conta e risco , não haverá garantias de adequação ou de funcionamento,o objetivo é a criação de um aplicativo funcional e gratuito funcional para a maioria das empresas.O aplicativo pode ser vendido desde que compilado , o suporte tecnico tambem pode ser cobrado por algum colaborador,porem o codigo fonte é gratuito e esta a disposição da comunidade.
+Este aplicativo é gratuito e codigo aberto ,caso for utilizar para sua empresa use por conta e risco , não haverá garantias de adequação ou de funcionamento,o objetivo é a criação de um aplicativo funcional e gratuito funcional para a maioria das empresas.O aplicativo pode ser vendido desde que compilado e o vendedor tenha contribuido no desenvolvimento do codigo do projeto , o suporte tecnico e instalação tambem pode ser cobrado por algum colaborador,porem o codigo fonte é gratuito e esta a disposição da comunidade e não pode ser vendido integral ou parcialmente.
 
 ##Doações
 O aplicativo nao tem custo , mas se quiser ajudar o projeto com qualquer valor em uma das contas abaixo:
@@ -21,7 +21,7 @@ Agencia 0478-2
 Conta :7.079-3
 
 ##Pacotes de terceiros
-* ACBR PCN , NFE e outros
+* ACBR: PCN , NFE e outros
 * Pack_powerpdf
 * synapse
 * Postgresql (banco de dados) , ou outro compativel com sqldb (mysql,firebird,oracle,sqlite) porem alterando o codigo
